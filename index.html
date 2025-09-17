@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/ba97bcb556.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="headings">
+            <nav>
+               <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class = "active">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="container">
+            
+            <div class="header-content">
+                <div class="header-text">
+                      <p>I am a <span class="typing"></span></p>
+                     
+                     <h1>Hi, I'M <span>Dheeraj</span></h1>
+                    
+                </div> 
+                <div class="header-image">
+                     <img src="images/pic3.PNG" alt="Dheeraj">
+                 </div>
+
+            </div>
+            
+
+        </div>
+       
+    </div>
+
+    <!-- --------------------------------------------------- About-------------------------------------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="aboutmetext">About Me</h1>
+                    <p>Hi, I’m Dheeraj, an MCA graduate who loves building responsive and user-friendly websites. I enjoy turning ideas into interactive projects using HTML, CSS, JavaScript, and Python, and I’m always excited to learn new technologies and improve my skills.</p>
+
+                    <div class="information">
+                        <div class="inf1 activelink" onclick="opentab(event, 'Skills')">Skills</div>
+                        <div class="inf1" onclick="opentab(event, 'Education')">Education</div>   
+                    </div>
+
+                    <div class="infcontent active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>Python</li>
+                            <li><span>Databases</span><br>MySQL</li>
+                            <li><span>Web Technologies</span><br> HTML, CSS, JavaScript</li>
+                            <li><span>Data Analysis Tool</span><br>Excel</li>
+                            <li><span>Git/GitHub</span></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="infcontent" id="Education">
+                        <ul>
+                            <li><span>Masters of Computer Application</span><br>Kr Mangalam University<br>Gurugram, India<br>2022-2024</li>
+                            
+                            <li><span>Bachelors of Science</span><br>Saraswati Mahila Mahavidyalya<br>Palwal, India<br>2019-2022</li>
+                            
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------ My Services --------------------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <div class="myservices">My Services</div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Building responsive and user-friendly websites using HTML, CSS, and JavaScript, including interactive UI components.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Data Analytics</h2>
+                    <p>Solving business problems by writing SQL queries to analyze datasets and generate insights.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>Python Development</h2>
+                    <p>Building beginner-friendly Python applications with integrated SQL functionality for real-world use cases.</p>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------Projects------------------------------------------------- -->
+
+    <div id="projects">
+        <div class="container">
+            <div class="sub-title">My Projects</div>
+            <div class="projects-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Super Market Billing System</h3>
+                        <p>A GUI-based application for billing, inventory management, and real-time database updates.</p>
+                        <a href="https://github.com/Dheeraj-Rawat/Super-Market-Billing-System " target="_blank" class="btn">code</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Image Search Engine</h3>
+                        <p>A web-based application for image search using the Unsplash API, featuring dynamic search, responsive UI, and real-time results display.</p>
+                        <a href="https://github.com/Dheeraj-Rawat/image-searching.git" target="_blank"class="btn">code</a>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>E-Commerce Sales and Profit Analysis</h3>
+                        <p>E-commerce data analysis to uncover sales and profit insights</p>
+                        <a href="https://github.com/Dheeraj-Rawat/E-commerce.git" target = "_blank"class="btn">code</a>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+            <a href="https://github.com/Dheeraj-Rawat" target="_blank" class="button">See More</a>
+        </div>
+        
+    </div>
+
+    <!-------------------------------------------------------------- conatct --------------------------------------------------->
+
+    <div id="contact">
+        <div class="contact-container">
+
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="contact-heading">Get in Touch</h1>
+                    <h4 class="contact-heading2">I'd like to hear from you!</h4>
+                    <p class="request">If you have any inquiries or just want to <br>say hi, please use the contact form!</p>
+
+                    <p class="email"><i class="fa-solid fa-paper-plane "></i>dheerajrawat693@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/dheeraj-rawat-082846264" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Dheeraj-Rawat" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:dheerajrawat693@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    
+
+                </div>
+                
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    
+                </div>
+            </div>
+        </div>
+        
+    
+    </div>
+
+
+
+
+    <script>
+        
+    var infff1 = document.getElementsByClassName("inf1");
+    var infcontentss = document.getElementsByClassName("infcontent");
+
+    function opentab(event, tabname) {
+          // Remove active class from all tabs
+          for (let tab of infff1) {
+        tab.classList.remove("activelink");
+          }
+
+          // Hide all content
+          for (let content of infcontentss) {
+        content.classList.remove("active-tab");
+          }
+
+          // Add active class to clicked tab
+          event.currentTarget.classList.add("activelink");
+
+          // Show the clicked tab content
+          document.getElementById(tabname).classList.add("active-tab");
+      }
+
+
+
+    
+
+    
+        
+    </script>
+
+    <script>
+                var sidemenu = document.getElementById("sidemenu");
+
+                function openmenu(){
+        sidemenu.style.right = "0";       // slide in sidebar
+                }
+
+                function closemenu(){
+        sidemenu.style.right = "-250px";  // slide out sidebar
+                }
+</script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxhy7ieX-N5qABSiMuy5C7mwTahZeXAhnmHEViCERRGTeGKMKLvb7rUElp0rxIFJkW5fQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML = "submitted"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+
+
+
+
+
+<!-- JavaScript for typing effect -->
+
+    const words = ["Frontend Developer", "Data Analyst", "Tech Enthusiast"];
+    const colors = ["#fb4673", "#fc9d45", "#9300fe"];
+    let i = 0, j = 0, currentWord = "", isDeleting = false;
+    const typingSpeed = 150;
+    const typingElement = document.querySelector(".typing");
+
+    function type() {
+        if(i >= words.length) i = 0;
+        currentWord = words[i];
+
+        if(!isDeleting) {
+            typingElement.textContent = currentWord.substring(0, j + 1);
+            j++;
+            if(j === currentWord.length) {
+                isDeleting = true;
+                setTimeout(type, 1000); // pause at the end
+                return;
+            }
+        } else {
+            typingElement.textContent = currentWord.substring(0, j - 1);
+            j--;
+            if(j === 0) {
+                isDeleting = false;
+                i++;
+            }
+        }
+         typingElement.style.color = colors[i];
+        setTimeout(type, isDeleting ? typingSpeed / 2 : typingSpeed);
+    }
+
+    type();
+</script>
+
+
+</html>
